@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravelista\Comments\Events;
+namespace Yarm\Comments\Events;
 
 use Illuminate\Queue\SerializesModels;
-use Laravelista\Comments\Comment;
+use Yarm\Comments\Comment;
 
 class CommentUpdated
 {

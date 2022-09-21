@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravelista\Comments;
+namespace Yarm\Comments;
 
 use Illuminate\Database\Eloquent\Model;
-use Laravelista\Comments\Events\CommentCreated;
-use Laravelista\Comments\Events\CommentUpdated;
-use Laravelista\Comments\Events\CommentDeleted;
+use Yarm\Comments\Events\CommentCreated;
+use Yarm\Comments\Events\CommentUpdated;
+use Yarm\Comments\Events\CommentDeleted;
 use Illuminate\Support\Facades\Config;
 
 class Comment extends Model

@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravelista\Comments;
+namespace Yarm\Comments;
 
-use Laravelista\Comments\Comment;
+use Yarm\Comments\Comment;
 
 class CommentPolicy
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravelista\Comments;
+namespace Yarm\Comments;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Mail;
-use Laravelista\Comments\Mail\MailSent;
+use Yarm\Comments\Mail\MailSent;
 use App\Models\Ref;
 use App\User;
 

@@ -1,13 +1,13 @@
 {
     "name": "yarm/comments",
-    "description": "An add-on for the YARM Reference Manager Application. Based on Laravelista comments",
+    "description": "An add-on for the YARM Reference Manager Application. Based on Yarm comments",
     "keywords": ["laravel", "comments"],
     "license": "MIT",
     "authors": [
         {
             "name": "Mario Bašić, Herbert Van Uffelen",
             "email": "herbert.van-uffelen@univie.ac.at",
-            "homepage": "https://laravelista.hr"
+            "homepage": "https://Yarm.hr"
         }
     ],
     "require": {

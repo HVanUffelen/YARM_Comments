@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravelista\Comments\Mail;
+namespace Yarm\Comments\Mail;
 
 use Illuminate\Http\Request;
 use Illuminate\Bus\Queueable;

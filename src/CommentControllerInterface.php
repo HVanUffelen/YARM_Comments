@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravelista\Comments;
+namespace Yarm\Comments;
 
 use Illuminate\Http\Request;
 

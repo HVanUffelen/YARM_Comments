@@ -2,7 +2,7 @@
 
 Comments is a Laravel package. With it you can easily implement native comments for your application.
 
-[![Become a Patron](https://img.shields.io/badge/Become%20a-Patron-f96854.svg?style=for-the-badge)](https://www.patreon.com/laravelista)
+[![Become a Patron](https://img.shields.io/badge/Become%20a-Patron-f96854.svg?style=for-the-badge)](https://www.patreon.com/Yarm)
 
 
 ## Overview
@@ -72,7 +72,7 @@ I plan to expand this chapter with more tutorials and articles. If you write som
 From the command line:
 
 ```bash
-composer require laravelista/comments
+composer require Yarm/comments
 ```
 
 
@@ -90,7 +90,7 @@ php artisan migrate
 Add the `Commenter` trait to your User model so that you can retrieve the comments for a user:
 
 ```php
-use Laravelista\Comments\Commenter;
+use Yarm\Comments\Commenter;
 
 class User extends Authenticatable
 {
@@ -104,7 +104,7 @@ class User extends Authenticatable
 Add the `Commentable` trait to the model for which you want to enable comments for:
 
 ```php
-use Laravelista\Comments\Commentable;
+use Yarm\Comments\Commentable;
 
 class Product extends Model
 {
@@ -118,7 +118,7 @@ class Product extends Model
 Publish the config file (optional):
 
 ```bash
-php artisan vendor:publish --provider="Laravelista\Comments\ServiceProvider" --tag=config
+php artisan vendor:publish --provider="Yarm\Comments\ServiceProvider" --tag=config
 ```
 
 
@@ -127,7 +127,7 @@ php artisan vendor:publish --provider="Laravelista\Comments\ServiceProvider" --t
 The default UI is made for Bootstrap 4, but you can change it however you want.
 
 ```bash
-php artisan vendor:publish --provider="Laravelista\Comments\ServiceProvider" --tag=views
+php artisan vendor:publish --provider="Yarm\Comments\ServiceProvider" --tag=views
 ```
 
 
@@ -136,7 +136,7 @@ php artisan vendor:publish --provider="Laravelista\Comments\ServiceProvider" --t
 You can publish migration to allow you to have more control over your table
 
 ```bash
-php artisan vendor:publish --provider="Laravelista\Comments\ServiceProvider" --tag=migrations
+php artisan vendor:publish --provider="Yarm\Comments\ServiceProvider" --tag=migrations
 ```
 
 
@@ -187,9 +187,9 @@ Replace `2` with any number you want.
 
 This package fires events to let you know when things happen.
 
-- `Laravelista\Comments\Events\CommentCreated`
-- `Laravelista\Comments\Events\CommentUpdated`
-- `Laravelista\Comments\Events\CommentDeleted`
+- `Yarm\Comments\Events\CommentCreated`
+- `Yarm\Comments\Events\CommentUpdated`
+- `Yarm\Comments\Events\CommentDeleted`
 
 
 ## REST API
@@ -197,10 +197,10 @@ This package fires events to let you know when things happen.
 To change the controller or the routes, see the config.
 
 ```
-Route::post('comments', '\Laravelista\Comments\CommentController@store');
-Route::delete('comments/{comment}', '\Laravelista\Comments\CommentController@destroy');
-Route::put('comments/{comment}', '\Laravelista\Comments\CommentController@update');
-Route::post('comments/{comment}', '\Laravelista\Comments\CommentController@reply');
+Route::post('comments', '\Yarm\Comments\CommentController@store');
+Route::delete('comments/{comment}', '\Yarm\Comments\CommentController@destroy');
+Route::put('comments/{comment}', '\Yarm\Comments\CommentController@update');
+Route::post('comments/{comment}', '\Yarm\Comments\CommentController@reply');
 ```
 
 
