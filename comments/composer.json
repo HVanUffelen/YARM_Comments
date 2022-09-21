@@ -1,0 +1,36 @@
+{
+    "name": "yarm/comments",
+    "description": "An add-on for the YARM Reference Manager Application. Based on Laravelista comments",
+    "keywords": ["laravel", "comments"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mario Bašić, Herbert Van Uffelen",
+            "email": "mario@laravelista.hr, herbert.van-uffelen@univie.ac.at",
+            "homepage": "https://laravelista.hr"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "erusev/parsedown": "^1.7",
+         "illuminate/database": "^5.6|^6.0|^7.0|^8.0",
+        "illuminate/http": "^5.6|^6.0|^7.0|^8.0",
+        "illuminate/pagination": "^5.6|^6.0|^7.0|^8.0",
+        "illuminate/routing": "^5.6|^6.0|^7.0|^8.0",
+        "illuminate/queue": "^5.6|^6.0|^7.0|^8.0",
+        "illuminate/support": "^5.6|^6.0|^7.0|^8.0",
+        "spatie/laravel-honeypot": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yarm\\Comments\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yarm\\Comments\\CommentsServiceProvider"
+            ]
+        }
+    }
+}
