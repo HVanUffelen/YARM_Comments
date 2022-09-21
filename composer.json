@@ -16,7 +16,7 @@
 
     "autoload": {
         "psr-4": {
-            "Yarm\\Comments\\": "../src/"
+            "Yarm\\Comments\\": "src/"
         }
     },
 
