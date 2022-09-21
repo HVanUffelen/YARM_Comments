@@ -54,7 +54,7 @@ class ServiceProvider extends YarmServiceProvider
         $this->definePermissions();
 
         $this->publishes([
-            __DIR__.'/../migrations/' => App::databasePath('migrations')
+            __DIR__ . '/../migrations/' => App::databasePath('migrations')
         ], 'migrations');
 
         $this->publishes([

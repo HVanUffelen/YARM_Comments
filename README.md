@@ -239,7 +239,7 @@ Request data:
 
 ## Upgrading from older versions (troubleshoot)
 
-Before creating an issue, read [this](./UPGRADE.md).
+Before creating an issue, read [this](UPGRADE.md).
 
 
 ## Sponsors & Backers
