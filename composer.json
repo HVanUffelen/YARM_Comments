@@ -19,10 +19,11 @@
             "Yarm\\Comments\\": "../src/"
         }
     },
+
     "extra": {
         "laravel": {
             "providers": [
-                "Yarm\\Comments\\CommentsServiceProvider"
+                "Yarm\\Comments\\ServiceProvider"
             ]
         }
     }
