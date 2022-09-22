@@ -9,6 +9,7 @@ return [
      */
     'model' => \Yarm\Comments\Comment::class,
 
+
     /**
      * You can customize the behaviour of these permissions by
      * creating your own and pointing to it here.
