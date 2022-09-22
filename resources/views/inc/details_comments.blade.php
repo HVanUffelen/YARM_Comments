@@ -1,4 +1,3 @@
-<?php
 @if (auth()->user() &&
             (auth()->user()->roles()->first()->role != 'Website' && config('yarm.core') != True))
     <div class="card mt-3">
