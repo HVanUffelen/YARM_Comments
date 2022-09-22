@@ -19,6 +19,7 @@ return [
         'delete-comment' => 'Yarm\Comments\CommentPolicy@delete',
         'edit-comment' => 'Yarm\Comments\CommentPolicy@update',
         'reply-to-comment' => 'Yarm\Comments\CommentPolicy@reply',
+
     ],
 
     /**
@@ -65,6 +66,8 @@ return [
      *
      * Comments will be soft deleted using laravels "softDeletes" trait.
      */
-    'soft_deletes' => false
+    'soft_deletes' => false,
+
+    'comments_present' => "true"
 
 ];
