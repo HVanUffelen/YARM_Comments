@@ -31,6 +31,6 @@ class MailSent extends Mailable
      */
     public function build()
     {
-        return $this->subject('DLBT - ' . $this->data['subject'])->markdown('comments::mail');
+        return $this->subject(strtolower(config('yarm.sys_name')) . ' - ' . $this->data['subject'])->markdown('comments::mail');
     }
 }

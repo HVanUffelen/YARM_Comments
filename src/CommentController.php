@@ -31,7 +31,7 @@ class CommentController extends Controller implements CommentControllerInterface
     }
 
     function sendEmail($request)
-    //Changes for DLBT
+    //Changes for YARM
     {
         $parent_commenter_email = null;
         // New comment

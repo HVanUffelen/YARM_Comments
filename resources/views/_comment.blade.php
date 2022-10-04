@@ -7,7 +7,7 @@
             <li id="comment-{{ $comment->getKey() }}" class="media">
                 @endif
                 {{--      Todo use Acronym (Yarm/DLBT)--}}
-                <img class="mr-3" style="display: inline-block; width: 65px" src="{{asset('Images/logo_dlbt.png')}}"
+                <img class="mr-3" style="display: inline-block; width: 65px" src="{{asset('Images/logo_' . strtolower(config('yarm.sys_name')) . '.png')}}"
                      alt="{{ $comment->commenter->name ?? $comment->guest_name }}">
                 <div class="media-body">
                     <h5 class="mt-0 mb-1">{{ $comment->commenter->name ?? $comment->guest_name }} <small

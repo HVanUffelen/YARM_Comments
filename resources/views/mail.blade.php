@@ -12,5 +12,5 @@
     {{ __('View Comment') }}
 @endcomponent
 
-<div style="text-align: center !important;">{!! 'DLBT - Universität Wien - ' . date("Y") . ' &#169;.' !!}</div>
+<div style="text-align: center !important;">{!! strtolower(config('yarm.sys_name')) . ' - Universität Wien - ' . date("Y") . ' &#169;.' !!}</div>
 @endcomponent
