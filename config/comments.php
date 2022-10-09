@@ -68,6 +68,6 @@ return [
      */
     'soft_deletes' => false,
 
-    'comments_present' => "true"
+    'comments_present' => true
 
 ];
